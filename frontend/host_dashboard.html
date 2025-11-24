@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Host Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <h1 class="app-title">QuizMaster</h1>
+        <h2>Host Dashboard</h2>
+      </div>
+      <a href="index.html">&larr; Back to Home</a>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <span class="stat-label">Quiz Code</span>
+        <span class="stat-value" id="dash-code"></span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Players</span>
+        <span class="stat-value" id="dash-player-count">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Status</span>
+        <span class="stat-value" id="dash-status">Lobby</span>
+      </div>
+    </div>
+
+    <section class="section-card">
+      <h2>Quiz Details</h2>
+      <p><strong>Title:</strong> <span id="dash-title"></span></p>
+    </section>
+
+    <section class="section-card">
+      <h2>Players Joined</h2>
+      <ul id="players-list" class="pill-list"></ul>
+    </section>
+
+    <div class="footer-actions">
+      <button id="btn-start-quiz" class="primary">Start Quiz</button>
+      <p id="dash-message" class="message"></p>
+    </div>
+  </div>
+
+  <script src="host_dashboard.js"></script>
+</body>
+</html>

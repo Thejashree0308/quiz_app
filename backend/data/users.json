@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "username": "theja",
+      "password_hash": "scrypt:32768:8:1$XRxhdcFgOzbVDrNE$9002bae03fc9e9b320401979cf63b892a89514344984847d1c25491ff90a437d78501415d40f3e1e9c96c5fc44c1eafaffca2b532d7bb6602df1f31e07785c01",
+      "created_at": "2025-11-24T13:10:05.716929Z"
+    },
+    {
+      "username": "watson",
+      "password_hash": "scrypt:32768:8:1$iDRfVKEeWmsPVXzG$44ae4e0c2b9b0a1658ac61e10df15f8dee05b2145ce1d31ee02dd53f18d93c740f098bf0b5f7b35f0a6b17d86b01e289a7d41eccbb5b871174eede85badc06c8",
+      "created_at": "2025-11-24T13:12:02.841685Z"
+    }
+  ]
+}

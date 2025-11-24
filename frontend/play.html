@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Play Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="play-quiz-title">Quiz</h1>
+    <a href="index.html">&larr; Exit</a>
+
+    <div class="status-bar">
+      <span id="timer-display">Time: 0s</span>
+      <span id="question-progress"></span>
+    </div>
+
+    <section id="question-section">
+      <h2 id="question-text"></h2>
+      <div id="options-container"></div>
+      <button id="btn-next" class="primary">Next</button>
+    </section>
+
+    <p id="play-message" class="message"></p>
+  </div>
+
+  <script src="play.js"></script>
+</body>
+</html>

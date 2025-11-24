@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Join Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Join a Quiz</h1>
+    <a href="index.html">&larr; Back Home</a>
+
+    <label>
+      Enter 5-digit quiz code:
+      <input id="quiz-code-input" maxlength="5" />
+    </label>
+    <button id="btn-join-quiz" class="primary">Join</button>
+    <p id="join-message" class="message"></p>
+
+    <section id="waiting-section" class="hidden">
+      <h2>Waiting Room</h2>
+      <p>Waiting for host to start the quiz...</p>
+      <p>Quiz: <span id="waiting-quiz-title"></span></p>
+      <p>Host: <span id="waiting-quiz-host"></span></p>
+    </section>
+  </div>
+
+  <script src="join.js"></script>
+</body>
+</html>

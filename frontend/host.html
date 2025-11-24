@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Host Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Host a Quiz</h1>
+    <a href="index.html">&larr; Back Home</a>
+
+    <section>
+      <h2>Quiz Settings</h2>
+      <input id="quiz-title" placeholder="Quiz Title" />
+      <label>
+        Time Mode:
+        <select id="time-mode">
+          <option value="per_quiz">Total time for quiz</option>
+          <option value="per_question">Time per question</option>
+        </select>
+      </label>
+      <label>
+        Time Limit (seconds):
+        <input id="time-limit" type="number" value="60" />
+      </label>
+    </section>
+
+    <section>
+      <h2>Questions</h2>
+      <div id="questions-container"></div>
+      <button id="btn-add-question">Add Question</button>
+    </section>
+
+    <button id="btn-create-quiz" class="primary">Create Quiz</button>
+    <p id="host-message" class="message"></p>
+
+    <section id="code-section" class="hidden">
+      <h2>Quiz Code</h2>
+      <p>Your quiz code: <strong id="quiz-code"></strong></p>
+      <p>Share this 5-digit code with players so they can join.</p>
+      <a id="host-dashboard-link" href="#">Go to Host Dashboard</a>
+    </section>
+  </div>
+
+  <script src="host.js"></script>
+</body>
+</html>

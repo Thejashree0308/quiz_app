@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="app-title">QuizMaster</h1>
+
+    <section id="welcome-section" class="hidden">
+      <h2 id="welcome-text"></h2>
+      <label>
+        Name / Team Name:
+        <input id="display-name" placeholder="Your name or team" />
+      </label>
+      <button id="btn-save-name">Save Name</button>
+      <p class="hint">Name is stored locally and used on leaderboard.</p>
+
+      <div class="mode-select">
+        <button id="btn-host">Host a Quiz</button>
+        <button id="btn-join">Join a Quiz</button>
+        <button id="btn-history">View My History</button>
+        <button id="btn-logout">Logout</button>
+      </div>
+      <p id="home-message" class="message"></p>
+    </section>
+    <section id="loading-section">
+      <p>Checking your session...</p>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

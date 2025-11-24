@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Leaderboard</h1>
+    <a href="index.html">&larr; Back Home</a>
+
+    <label>
+      Quiz Code:
+      <input id="lb-code" maxlength="5" />
+    </label>
+    <button id="btn-load-lb" class="primary">Load Leaderboard</button>
+
+    <table id="lb-table" class="hidden">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Username</th>
+          <th>Correct</th>
+          <th>Time (s)</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody id="lb-body"></tbody>
+    </table>
+
+    <p id="lb-message" class="message"></p>
+  </div>
+
+  <script src="leaderboard.js"></script>
+</body>
+</html>
